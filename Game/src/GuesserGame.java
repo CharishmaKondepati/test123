@@ -110,7 +110,36 @@ class Umpire {
 			numFromPlayer3 = p3.playerNum();
 			System.out.println("Player4 kindly enter the number :");
 			numFromPlayer4 = p4.playerNum();
-			if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
+			if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2) && (numFromGuesser==numFromPlayer3 || numFromGuesser == numFromPlayer4))
+			{
+				System.out.println("Game Tied Play One More Match.... ");
+				collectNumFromGuesser();
+				System.out.println("\nTeam-1 :");
+				System.out.println("Player1 kindly enter the number :");
+				numFromPlayer1 = p1.playerNum();
+				System.out.println("Player2 kindly enter the number :");
+				numFromPlayer2 = p2.playerNum();
+				
+				System.out.println("\nTeam-2 :");
+				System.out.println("Player3 kindly enter the number :");
+
+				
+				
+				numFromPlayer3 = p3.playerNum();
+				System.out.println("Player4 kindly enter the number :");
+				numFromPlayer4 = p4.playerNum();
+				if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
+				{
+					System.out.println("Team-1 Won the Game!!");
+				}
+				else
+				{
+					System.out.println("Team-2 Won the Game!!");
+				}
+			}
+		
+			
+			else if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
 			{
 				System.out.println("Team-1 Won the Game!!");
 			}
@@ -137,15 +166,49 @@ class Umpire {
 			numFromPlayer5 = p5.playerNum();
 			System.out.println("Player6 kindly enter the number :");
 			numFromPlayer6 = p6.playerNum();
-			if((numFromGuesser==numFromPlayer3 || numFromGuesser == numFromPlayer4))
+			if((numFromGuesser==numFromPlayer3 || numFromGuesser == numFromPlayer4) && (numFromGuesser==numFromPlayer5 || numFromGuesser == numFromPlayer6))
 			{
-				System.out.println("Team-2 Won the Game!!");
+				
+					System.out.println("Game Tied Play One More Match.... ");
+					collectNumFromGuesser();
+					System.out.println("Team-2 and Team-3 Won the Game Moving to Finals!!");
+					  collectNumFromGuesser();
+					  System.out.println("\nTeam-2 :");
+						System.out.println("Player3 kindly enter the number :");
+						numFromPlayer3 = p3.playerNum();
+						System.out.println("Player4 kindly enter the number :");
+						numFromPlayer4 = p4.playerNum();
+						
+						System.out.println("\nTeam-3 :");
+						System.out.println("Player5 kindly enter the number :");
+
+						
+						
+						numFromPlayer5 = p5.playerNum();
+						System.out.println("Player6 kindly enter the number :");
+						numFromPlayer6 = p6.playerNum();
+						if((numFromGuesser==numFromPlayer3 || numFromGuesser == numFromPlayer4))
+						{
+							System.out.println("Team-2 Won the Game!!");
+						}
+						else
+						{
+							System.out.println("Team-3 Won the Game!!");
+						}
 			}
-			else
-			{
-				System.out.println("Team-3 Won the Game!!");
+				else if((numFromGuesser==numFromPlayer3 || numFromGuesser == numFromPlayer4))
+				{
+					System.out.println("Team-2 Won the Game!!");
+				}
+				else
+				{
+					System.out.println("Team-3 Won the Game!!");
+				}
+				
+					
 			}
-	  }
+			
+	  
 	  else if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2) && (numFromGuesser==numFromPlayer5 || numFromGuesser == numFromPlayer6))
 	  {
 		  System.out.println("Team-1 and Team-3 Won the Game Moving to Finals!!");
@@ -164,15 +227,44 @@ class Umpire {
 			numFromPlayer5 = p5.playerNum();
 			System.out.println("Player6 kindly enter the number :");
 			numFromPlayer6 = p6.playerNum();
-			if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
+			if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2) && (numFromGuesser==numFromPlayer5 || numFromGuesser == numFromPlayer6))
 			{
-				System.out.println("Team-1 Won the Game!!");
+				System.out.println("Game Tied Play One More Match.... ");
+				collectNumFromGuesser();
+				System.out.println("\nTeam-1 :");
+				System.out.println("Player1 kindly enter the number :");
+				numFromPlayer1 = p1.playerNum();
+				System.out.println("Player2 kindly enter the number :");
+				numFromPlayer2 = p2.playerNum();
+				
+				System.out.println("\nTeam-3 :");
+				System.out.println("Player5 kindly enter the number :");
+
+				
+				
+				numFromPlayer5 = p5.playerNum();
+				System.out.println("Player6 kindly enter the number :");
+				numFromPlayer6 = p6.playerNum();
+				if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
+				{
+					System.out.println("Team-1 Won the Game!!");
+				}
+				else
+				{
+					System.out.println("Team-3 Won the Game!!");
+				}
 			}
-			else
-			{
-				System.out.println("Team-3 Won the Game!!");
+			else	if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2))
+				{
+					System.out.println("Team-1 Won the Game!!");
+				}
+				else
+				{
+					System.out.println("Team-3 Won the Game!!");
+				}
+				
 			}
-	  }
+			
 	  
 	  else if((numFromGuesser==numFromPlayer1 || numFromGuesser == numFromPlayer2) )
 		{
